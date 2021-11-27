@@ -7,8 +7,52 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <button>click</button>
-    <h2></h2>
+    <section>
+      <div class="MainFlex flex">
+        <div class="Date">
+          <div class="flex DateWrap">
+            <p class="year"></p>
+            <div class="DayWrap">
+              <div class="Day flex">
+                <p class="today"></p>
+                <span class="todayNum"></span>
+              </div>
+              <p class="dday"></p>
+            </div>
+          </div>
+          <div class="month"></div>
+        </div>
+        <div>
+          <form class="input hidden" id="login-form">
+            <input
+              type="text"
+              placeholder="What is your name?"
+              maxlength="15"
+              required
+            />
+            <button>LOGIN</button>
+          </form>
+          <p class="name hidden"></p>
+        </div>
+        <div class="weather" id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="IMG flex">
+        <h1 class="clock"></h1>
+      </div>
+      <div class="todo">
+        <form class="todoForm">
+          <input type="text" placeholder="오늘의 할 일" required />
+        </form>
+        <ul id="todoList"></ul>
+      </div>
+    </section>
   </body>
-  <script src="./main.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/img.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/todo.js"></script>
 </html>

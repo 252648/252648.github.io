@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: -0.4px;
+  font-family: "Cafe24Dangdanghae";
+}
+@font-face {
+  font-family: "Cafe24Dangdanghae";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.flex {
+  display: flex;
+}
+img {
+  max-width: 100%;
+}
+
+section {
+  height: 100vh;
+  position: relative;
+  padding: 40px;
+  max-width: 100%;
+}
+.IMG {
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.IMG .clock {
+  position: absolute;
+  color: #fff;
+  font-size: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.MainFlex {
+  justify-content: space-between;
+}
+.Date {
+}
+.Date .DateWrap {
+  align-items: center;
+}
+.DateWrap .year {
+  font-size: 80px;
+}
+.DayWrap {
+  margin-left: 10px;
+}
+.Day {
+  font-size: 42px;
+}
+.Day .today {
+}
+.Day .todayNum {
+}
+.DayWrap .dday {
+  font-size: 22px;
+}
+.month {
+  font-size: 32px;
+}
+
+/***********************로그인**/
+.hidden {
+  display: none;
+}
