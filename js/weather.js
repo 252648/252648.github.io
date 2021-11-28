@@ -7,16 +7,15 @@ function onGEOK(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const WEATHER = document.querySelector("#weather span:first-child");
-      const CITY = document.querySelector("#weather span:last-child");
-      CITY.innerText = data.name;
-      WEATHER.innerText = `${data.weather[0].main} / ${data.main.temp}`;
-      var img =
-        "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
-      const weatherIcon = document.createElement("img");
-      const IMGBOX = document.querySelector(".weather");
-      weatherIcon.src = `${img}`;
-      IMGBOX.appendChild(weatherIcon);
+      const CITY = document.querySelector("#weather span");
+      CITY.innerText = `${data.main.temp}°C|${data.name}`;
+      //   WEATHER.innerText = ` ${data.main.temp}`;
+      //   var img =
+      //     "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
+      //   const weatherIcon = document.createElement("img");
+      //   const IMGBOX = document.querySelector(".weather");
+      //   weatherIcon.src = `${img}`;
+      //   IMGBOX.appendChild(weatherIcon);
     });
 }
 function onGEERROR() {
